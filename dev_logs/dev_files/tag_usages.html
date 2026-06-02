@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tag Usages</title>
+</head>
+<body>
+    <header>
+        <h1 style = "font-size:small">HTML Tag Usages (Press Ctrl + F to search)</h1>
+        <hr style = "border: 1px solid black;">
+    </header>
+    <main>
+        <!-- 1. 기본 구조 태그 -->
+        <section>
+            <h2 style = "font-size:medium; color: darkblue">Fundamental Structure Tags [9]</h2>
+            <small><i><b>&lt;</b>?<b>&gt;</b>: Tags without closing tags</i></small>
+            <hr>
+
+            <!-- <DOCTYPE! html>태그 -->
+            <article>
+                <h3>1. &lt;DOCTYPE! html&gt; Tag</h3>
+                <p>&lt;DOCTYPE! html&gt; Tag is used to specify the version of the HTML document. This tag must be placed on the first line of the document,
+                    <br>and for HTML5 version, it is written as &lt;!DOCTYPE html&gt;.</p>
+            </article>
+            <hr style="border: 1px dotted black;">
+
+            <!-- <html>태그 -->
+            <article>
+                <h3>2. &lt;html&gt; Tag</h3>
+                <p>&lt;html&gt; Tag indicates the start and end of an HTML document. All elements must be contained within this tag.</p>
+            </article>
+            <hr style="border: 1px dotted black;">
+
+            <!-- <head>태그 -->
+            <article>
+                <h3>3. &lt;head&gt; Tag</h3>
+                <p>&lt;head&gt; Tag is used to include metadata about the HTML document. Metadata refers to data about the data.</p>
+                <p>This includes the title, character encoding, style sheet links, and more.</p>
+            </article>
+            <hr style="border: 1px dotted black;">
+
+            <!-- <meta>태그 -->
+            <article>
+                <h3>4. &lt;meta&gt; Tag</h3>
+                <p>&lt;meta&gt; Tag is used to include metadata about the HTML document. This includes character encoding, description, keywords, and more.</p>
+            </article>
+            <hr style="border: 1px dotted black;">
+
+            <!-- <title>태그 -->
+            <article>
+                <h3>5. &lt;title&gt; Tag</h3>
+                <p>&lt;title&gt; Tag is the tag that enters the title to be displayed in the browser tab. It also affects search engine results.</p>
+            </article>
+            <hr style="border: 1px dotted black;">
+
+            <!-- <header>태그 -->
+            <article>
+                <h3>6. &lt;header&gt; Tag</h3>
+                <p>&lt;header&gt; Tag is used to indicate the header of a document or section. It is commonly used with a title.</p>
+            </article>
+            <hr style="border: 1px dotted black;">
+
+            <!-- <main>태그 -->
+            <article>
+                <h3>7. &lt;main&gt; Tag</h3>
+                <p>&lt;main&gt; Tag is used to indicate the main content of a document. It contains the primary content of the page.</p>
+            </article>
+            <hr style="border: 1px dotted black;">
+
+            <!-- <section>태그 -->
+            <article>
+                <h3>8. &lt;section&gt; Tag</h3>
+                <p>&lt;section&gt; Tag is used to indicate a section of a document. It is useful for grouping related content.</p>
+            </article>
+            <hr style="border: 1px dotted black;">
+
+            <!-- <article>태그 -->
+            <article>
+                <h3>9. &lt;article&gt; Tag</h3>
+                <p>&lt;article&gt; Tag is used to indicate independent content. It is used for blog posts, news articles, user comments, and more.</p>
+                <h4>1~9 Usage Examples</h4>
+                <code>
+                    <blockquote>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html lang="ko"&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;meta charset="UTF-8"&gt;<br>
+                        &lt;title&gt;Document Title&lt;/title&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                        &lt;header&gt;&lt;h1&gt;Header Title&lt;/h1&gt;&lt;/header&gt;<br>
+                        &lt;main&gt;<br>
+                        &lt;section&gt;<br>
+                        &lt;article&gt;&lt;p&gt;Independent Content&lt;/p&gt;&lt;/article&gt;<br>
+                        &lt;/section&gt;<br>
+                        &lt;/main&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <header><h1>Header Title</h1></header>
+                <main>
+                    <section>
+                        <article><p>Independent Content</p></article>
+                    </section>
+                </main>
+            </article>
+        </section>
+
+        <hr style = "border: 1px solid black;">
+
+        <!-- 2. 텍스트 표현 태그 -->
+        <section>
+            <h2 style = "font-size:medium; color: darkblue">Text Tags [18]</h2>
+            <small><i><b>&lt;</b>?<b>&gt;</b>: 닫는 태그가 없는 태그</i></small>
+            <hr>
+            <!-- <h1>~<h6>태그 -->
+            <article>
+                <h3>1. &lt;h1&gt; ~ &lt;h6&gt; Tag</h3>
+                <p>from &lt;h1&gt; to &lt;h6&gt; tags are used to indicate headings. The smaller the number, the more important the heading.</p>
+                <p>h1 to h2 should be used in order of importance, and h1 should be used only once per page.</p>
+
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;h1&gt;Document Title 1&lt;/h1&gt;<br>
+                        &lt;h2&gt;Document Title 2&lt;/h2&gt;<br>
+                        &lt;h3&gt;Document Title 3&lt;/h3&gt;<br>
+                        &lt;h4&gt;Document Title 4&lt;/h4&gt;<br>
+                        &lt;h5&gt;Document Title 5&lt;/h5&gt;<br>
+                        &lt;h6&gt;Document Title 6&lt;/h6&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+
+                <h1>Document Title 1</h1>
+                <h2>Document Title 2</h2>
+                <h3>Document Title 3</h3>
+                <h4>Document Title 4</h4>
+                <h5>Document Title 5</h5>
+                <h6>Document Title 6</h6>
+                <hr style="border: 1px dotted black;">
+            </article>
+
+            <!-- <p> 태그 -->
+            <article>
+                <h3>2. &lt;p&gt; Tag</h3>
+                <p>&lt;p&gt; Tag is used to indicate a paragraph. It is useful for dividing text into multiple paragraphs to improve readability.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;p&gt;First paragraph&lt;/p&gt;
+                        &lt;p&gt;Second paragraph&lt;/p&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <p>First paragraph</p>
+                <p>Second paragraph</p>
+                <hr style="border: 1px dotted black;">
+            </article>
+
+            <!-- <br> 태그 -->
+            <article>
+                <h3>3. &lt;br&gt; Tag</h3>
+                <p>&lt;br&gt; Tag is used to indicate a line break. It is useful when you want to break a line within a paragraph.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;p&gt;First paragraph&lt;/p&gt;
+                        &lt;p&gt;Second paragraph&lt;/p&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <p>First paragraph<br>Second paragraph</p>
+                <hr style="border: 1px dotted black;">
+            </article>
+
+            <!-- <hr> 태그 -->
+            <article>
+                <h3>4. &lt;hr&gt; Tag</h3>
+                <p>&lt;hr&gt; Tag is used to indicate a horizontal rule. It is useful for separating sections or indicating a thematic break in the content.</p>
+                <p>These days, it is often used for mood shifts in writing.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;hr&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <hr>
+                <hr style="border: 1px dotted black;">
+
+            </article>
+
+            <!-- <blockquote> 태그 -->
+            <article>
+                <h3>5. &lt;blockquote&gt; Tag</h3>
+                <p>&lt;blockquote&gt; Tag is used to indicate a long quotation. It is useful when quoting someone else's words or text.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;blockquote&gt;제가 지금 작성하는 글은 인용문의 예시입니다. &lt;/blockquote&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <blockquote>
+                    제가 지금 작성하는 글은 인용문의 예시입니다.
+                </blockquote>
+                <hr style="border: 1px dotted black;">
+            </article>
+
+            <!-- <strong> 태그 -->
+            <article>
+                <h3>6. &lt;strong&gt; Tag</h3>
+                <p>&lt;strong&gt; Tag is used to emphasize text. It is commonly used for important content or urgent notifications.<br>
+                &lt;b&gt; Tag and &lt;strong&gt; Tag are often confused, but &lt;b&gt; is used to simply make text bold without conveying any additional emphasis.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;strong&gt;Emphasized text&lt;/strong&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <p><strong>Emphasized text</strong></p>
+                <hr style="border: 1px dotted black;">
+            </article>
+
+            <!-- <b> 태그 -->
+            <article>
+                <h3>7. &lt;b&gt; Tag</h3>
+                <p>&lt;b&gt; Tag is used to make text bold. It is commonly used for making text stand out or for stylistic purposes.<br>
+                &lt;strong&gt; Tag and &lt;b&gt; Tag are often confused, but &lt;strong&gt; is used to convey additional emphasis.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;b&gt;Bold text&lt;/b&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <p><b>Bold text</b></p>
+                <hr style="border: 1px dotted black;">
+            </article>
+
+            <!-- <em> 태그 -->
+            <article>
+                <h3>8. &lt;em&gt; Tag</h3>
+                <p>&lt;em&gt; Tag is used to display text in italics.<br>
+                &lt;i&gt; Tag and &lt;em&gt; Tag are often confused, but &lt;em&gt; is used for emphasis while &lt;i&gt; is used for stylistic purposes.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;em&gt;Emphasized text&lt;/em&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <p><em>Emphasized text</em></p>
+                <hr style="border: 1px dotted black;">
+            </article>
+
+            <!-- <i> 태그 -->
+            <article>
+                <h3>9. &lt;i&gt; Tag</h3>
+                <p>&lt;i&gt; Tag is used to display text in italics.<br>
+                &lt;em&gt; Tag and &lt;i&gt; Tag are often confused, but &lt;em&gt; is used for emphasis while &lt;i&gt; is used for stylistic purposes.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;i&gt;Italic text&lt;/i&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <p><i>Italic text</i></p>
+                <hr style="border: 1px dotted black;">
+            </article>
+
+            <!-- <cite> 태그 -->
+            <article>
+                <h3>10. &lt;cite&gt; Tag</h3>
+                <p>&lt;cite&gt; Tag is used to indicate the title of a work or source.<br>
+                For example, it is used to display the titles of books, papers, movies, etc.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;cite&gt;Work Title&lt;/cite&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <p><cite>Work Title</cite></p>
+                <hr style="border: 1px dotted black;">
+            </article>
+
+            <!-- <code> 태그 -->
+            <article>
+                <h3>11. &lt;code&gt; Tag</h3>
+                <p>&lt;code&gt; Tag is used to indicate computer code.<br>
+                    It is useful for displaying code snippets or command-line instructions.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;code&gt;console.log("Hello, World!");&lt;/code&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <p><code>console.log("Hello, World!");</code></p>
+                <hr style="border: 1px dotted black;">
+            </article>
+
+            <!-- <abbr> 태그 -->
+            <article>
+                <h3>12. &lt;abbr&gt; Tag</h3>
+                <p>&lt;abbr&gt; Tag is used to indicate an abbreviation or acronym.<br>
+                For example, "<abbr title="HyperText Markup Language">HTML</abbr>" is an abbreviation for "HyperText Markup Language".</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <p><abbr title="HyperText Markup Language">HTML</abbr></p>
+                <hr style="border: 1px dotted black;">
+            </article>
+
+            <!-- <del> 태그 -->
+            <article>
+                <h3>13. &lt;del&gt; Tag</h3>
+                <p>&lt;del&gt; Tag is used to indicate deleted text.<br>
+                For example, it is used to display content that has been removed from a document.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;del&gt;Deleted text&lt;/del&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <p><del>Deleted text</del></p>
+                <hr style="border: 1px dotted black;">
+            </article>
+
+            <!-- <ins> 태그 -->
+            <article>
+                <h3>14. &lt;ins&gt; Tag</h3>
+                <p>&lt;ins&gt; Tag is used to indicate inserted text.<br>
+                For example, it is used to display content that has been added to a document.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;ins&gt;Inserted text&lt;/ins&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <p><ins>Inserted text</ins></p>
+                <hr style="border: 1px dotted black;">
+            </article>
+
+            <!-- <mark> 태그 -->
+            <article>
+                <h3>15. &lt;mark&gt; Tag</h3>
+                <p>&lt;mark&gt; Tag is used to highlight text.<br>
+                It is commonly used to emphasize parts of the text that are relevant to the user's search query.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;mark&gt;Highlighted text&lt;/mark&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <p><mark>Highlighted text</mark></p>
+                <hr style="border: 1px dotted black;">
+            </article>
+
+            <!-- <small> 태그 -->
+            <article>
+                <h3>16. &lt;small&gt; Tag</h3>
+                <p>&lt;small&gt; Tag is used to indicate small text.<br>
+                It is commonly used for auxiliary information or copyright notices.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;small&gt;Small text&lt;/small&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <p><small>Small text</small></p>
+                <hr style="border: 1px dotted black;">
+            </article>
+
+            <!-- <sub> 태그 -->
+            <article>
+                <h3>17. &lt;sub&gt; Tag</h3>
+                <p>&lt;sub&gt; Tag is used to indicate subscript text.<br>
+                It is commonly used in chemical formulas to represent the number of atoms.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;sub&gt;subscript&lt;/sub&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <p>H<sub>2</sub>O</p>
+                <hr style="border: 1px dotted black;">
+            </article>
+
+            <!-- <sup> 태그 -->
+            <article>
+                <h3>18. &lt;sup&gt; Tag</h3>
+                <p>&lt;sup&gt; Tag is used to indicate superscript text.<br>
+                It is commonly used in mathematical expressions to represent exponents.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;sup&gt;superscript&lt;/sup&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <p>E = mc<sup>2</sup></p>
+            </article>
+        </section>
+
+        <hr style = "border: 1px solid black;">
+
+        <!-- 3. 목록 태그 -->
+        <section>
+            <h2 style = "font-size:medium; color: darkblue">List Tags [6개]</h2>
+            <small><i><b>&lt;</b>?<b>&gt;</b>: Tags without closing tags</i></small><br>
+            <img src="../../images/dev-html-ordered_structure.jpg" alt="List with ordered structure", width="500"><br>
+            <img src="../../images/dev-html-unordered_structure.jpg" alt="List with unordered structure", width="500"><br>
+            <img src="../../images/dev-html-description_list_structure.jpg" alt="List with description structure", width="500">
+
+            <p>First, as shown in the images above, declare the list and then insert the data inside it.<br>
+            For more details, refer to the examples below.</p>
+            <hr style="border: 1px dotted black;">
+
+            <!-- <li> 태그 -->
+            <article>
+                <h3>1. &lt;li&gt; Tag</h3>
+                <p>&lt;li&gt; Tag is used to indicate an item in a list.<br>
+                It is commonly used with &lt;ul&gt; or &lt;ol&gt; tags.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;ul&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+                        &lt;/ul&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ul>
+                <hr style="border: 1px dotted black;">
+            </article>
+
+            <!-- <ol> 태그 -->
+            <article>
+                <h3>2. &lt;ol&gt; Tag</h3>
+                <p>&lt;ol&gt; Tag is used to indicate an ordered list.<br>
+                It is commonly used with &lt;li&gt; tags.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;ol&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+                        &lt;/ol&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ol>
+                <hr style="border: 1px dotted black;">
+            </article>
+
+            <!-- <ul> 태그 -->
+            <article>
+                <h3>3. &lt;ul&gt; Tag</h3>
+                <p>&lt;ul&gt; Tag is used to indicate an unordered list.<br>
+                It is commonly used with &lt;li&gt; tags.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;ul&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+                        &lt;/ul&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ul>
+                <hr style="border: 1px dotted black;">
+            </article>
+
+            <!-- <dl> 태그 -->
+            <article>
+                <h3>4. &lt;dl&gt; Tag</h3>
+                <p>&lt;dl&gt; Tag is used to indicate a definition list.<br>
+                    A definition list is a list of terms and their corresponding descriptions.<br>
+                    It is commonly used with &lt;dt&gt; (definition term) and &lt;dd&gt; (definition description) tags.</p>
+                <h4>Examples are referenced in the &lt;dd&gt; tag</h4>
+            </article>
+
+            <!-- <dt> 태그 -->
+            <article>
+                <h3>5. &lt;dt&gt; Tag</h3>
+                <p>&lt;dt&gt; Tag is used to indicate a definition term in a definition list.<br>
+                It is commonly used with &lt;dl&gt; and &lt;dd&gt; tags.</p>
+                <h4>Examples are referenced in the &lt;dd&gt; tag</h4>
+            </article>
+
+            <!-- <dd> 태그 -->
+            <article>
+                <h3>6. &lt;dd&gt; Tag</h3>
+                <p>&lt;dd&gt; Tag is used to indicate a definition description in a definition list.<br>
+                It is commonly used with &lt;dl&gt; and &lt;dt&gt; tags.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;dl&gt;<br>
+                        &nbsp;&nbsp;&lt;dt&gt;Term 1&lt;/dt&gt;<br>
+                        &nbsp;&nbsp;&lt;dd&gt;Description 1&lt;/dd&gt;<br>
+                        &nbsp;&nbsp;&lt;dt&gt;Term 2&lt;/dt&gt;<br>
+                        &nbsp;&nbsp;&lt;dd&gt;Description 2&lt;/dd&gt;<br>
+                        &lt;/dl&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <dl>
+                    <dt>Term 1</dt>
+                    <dd>Description 1</dd>
+                    <dt>Term 2</dt>
+                    <dd>Description 2</dd>
+                </dl>
+            </article>
+        </section>
+        <hr style = "border: 1px solid black;">
+
+        <!-- 4. 표 태그 -->
+        <section>
+            <h2 style = "font-size:medium; color: darkblue">Table Tag [6]</h2>
+            <small><i><b>&lt;</b>?<b>&gt;</b>: Tags without closing tags</i></small>
+            <p>Table is divided into the following parts: table caption, column names, body, and summary.</p>
+            <img src = "../../images/dev-html-table_structure.jpg" alt = "표 구조" width="600px">
+            <p>
+                To create a table like the one in the image above, use the &lt;table&gt; tag. This is the process of declaring a table.<br>
+                To add a title to the table, use the &lt;caption&gt; tag.<br>
+                Generally, in Excel, data is entered based on rows and columns, but in HTML, data is entered based on rows, and the columns are automatically adjusted.
+                For example, 2 x 3 table where you want the bottom-right cell to be empty, you would not include data in the third cell of the second row.<br>
+                Rows are created with the &lt;tr&gt; tag.<br>
+                Data is created with the &lt;td&gt; tag.<br>
+                Detailed explanations are provided below.
+            </p>
+            <hr style = "border: 1px dotted black;">
+
+            <!-- <table> 태그 -->
+            <article>
+                <h3>1. &lt;table&gt; Tag</h3>
+                <p>&lt;table&gt; Tag is used to indicate a table.<br>
+                Generally, it is used with the following tags:<br>
+                &lt;caption&gt; (table caption(title)) <br>
+                &lt;tr&gt; (table row)<br> 
+                &lt;th&gt; (table header)<br>
+                &lt;td&gt; (table data)<br>
+                These tags are used together.</p>
+                <h4>Examples are referenced in the &lt;td&gt; tag</h4>
+            </article>
+            <hr style = "border: 1px dotted black;">
+            
+            <!-- <tr> 태그 -->
+            <article>
+                <h3>2. &lt;tr&gt; Tag</h3>
+                <p>&lt;tr&gt; Tag is used to indicate a row in a table.<br>
+                Generally, it is used with the &lt;table&gt; tag.<br>
+                The &lt;tr&gt; tag contains &lt;th&gt; or &lt;td&gt; tags.</p>
+                <h4>Examples are referenced in the &lt;td&gt; tag</h4>
+            </article>
+            <hr style = "border: 1px dotted black;">
+
+            <!-- <th> 태그 -->
+            <article>
+                <h3>3. &lt;th&gt; Tag</h3>
+                <p>&lt;th&gt; Tag is used to indicate a header cell in a table.<br>
+                Generally, it is used within the &lt;tr&gt; tag, and the text is displayed bold and centered by default.</p>
+                <h4>Examples are referenced in the &lt;td&gt; tag</h4>
+            </article>
+            <hr style = "border: 1px dotted black;">
+
+            <!-- <td> 태그 -->
+            <article>
+                <h3>4. &lt;td&gt; Tag</h3>
+                <p>&lt;td&gt; Tag is used to indicate a data cell in a table.<br>
+                Generally, it is used within the &lt;tr&gt; tag, and the text is left-aligned and not displayed bold by default.</p>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;table&gt;<br>
+                        &nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 1&lt;/th&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 2&lt;/th&gt;<br>
+                        &nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data 1&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data 2&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &lt;/table&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <table border="1">
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                    </tr>
+                </table>
+            </article>
+
+            <!-- <thead> 태그 -->
+            <article>
+                <h3>5. &lt;thead&gt; Tag</h3>
+                <p>&lt;thead&gt; Tag is used to indicate the header section of a table.<br>
+                Generally, it is used within the &lt;table&gt; tag, and contains &lt;th&gt; tags for the header rows.<br>
+                When a table is long and not fully visible, JavaScript can be used to fix the table header while only the body portion is scrollable.</p>
+                <h4>Examples are referenced in the &lt;td&gt; tag</h4>
+            </article>
+
+            <!-- <tbody> 태그 -->
+            <article>
+                <h3>6. &lt;tbody&gt; Tag</h3>
+                <p>&lt;tbody&gt; Tag is used to indicate the body section of a table.<br>
+                Generally, it is used within the &lt;table&gt; tag, and contains &lt;tr&gt; tags for the data rows.</p>
+                <h4>Examples are referenced in the &lt;td&gt; tag</h4>
+            </article>
+
+            <!-- <tfoot> 태그 -->
+            <article>
+                <h3>7. &lt;tfoot&gt; Tag</h3>
+                <p>&lt;tfoot&gt; Tag is used to indicate the footer section of a table.<br>
+                Generally, it is used within the &lt;table&gt; tag, and contains &lt;tr&gt; tags for the footer rows.<br>
+                Similar to the &lt;thead&gt; tag, it can be fixed while only the body portion is scrollable.</p>
+                <h4>Examples are referenced in the &lt;td&gt; tag</h4>
+            </article>
+
+            <!-- 여기서부터 계속 -->
+        </section>
+        <hr style = "border: 1px solid black;">
+
+        <!-- 5. 파일 태그 -->
+        <section>
+            <h2 style = "font-size:medium; color: darkblue">File Tags []</h2>
+            <small><i><b>&lt;</b>?<b>&gt;</b>: Tags without closing tags</i></small>
+            <hr style = "border: 1px dotted black;">
+
+        </section>
+    </main>
+</body>
+</html>
