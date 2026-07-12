@@ -598,33 +598,92 @@
                 <h3>4. &lt;td&gt; Tag</h3>
                 <p>&lt;td&gt; Tag is used to indicate a data cell in a table.<br>
                 Generally, it is used within the &lt;tr&gt; tag, and the text is left-aligned and not displayed bold by default.</p>
+                <h4>Attributes</h4>
+                <dl>
+                    <dt><b>-<span style = "color: purple">colspan</span></b></dt>
+                    <dd>To combine multiple columns into one cell, use the <span style = "color: purple">colspan</span> attribute.</dd>
+                    <dt><b>-<span style = "color: purple">rowspan</span></b></dt>
+                    <dd>To combine multiple rows into one cell, use the <span style = "color: purple">rowspan</span> attribute.</dd>
+                </dl>
                 <h4>Code</h4>
                 <code>
                     <blockquote>
-                        &lt;table&gt;<br>
-                        &nbsp;&nbsp;&lt;tr&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 1&lt;/th&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 2&lt;/th&gt;<br>
+                        &lt;table style = "border: 1px solid black; border-collapse: collapse;"&gt;<br>
+                        &nbsp;&nbsp;&lt;caption&gt;Practice&lt;/caption&gt;<br>
+                        &nbsp;&nbsp;&lt;thead&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th style = "border: 1px solid black;"&gt;Room Name&lt;/th&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th style = "border: 1px solid black;"&gt;Target&lt;/th&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th style = "border: 1px solid black;"&gt;Size&lt;/th&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th style = "border: 1px solid black;"&gt;Price&lt;/th&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &nbsp;&nbsp;&lt;/thead&gt;<br>
+                        &nbsp;&nbsp;&lt;tbody&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td style = "border: 1px solid black;"&gt;Yuchae Room&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td style = "border: 1px solid black;"&gt;Female Dormitory&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td style = "border: 1px solid black;" rowspan="3"&gt;4-person room&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td style = "border: 1px solid black;" rowspan="4"&gt;20,000 KRW per person&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td style = "border: 1px solid black;" rowspan="2"&gt;Dongbaek Room&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td style = "border: 1px solid black;"&gt;Male Dormitory&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td style = "border: 1px solid black;"&gt;Family 1 team&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td style = "border: 1px solid black;"&gt;Cheonhyehyang Room&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td style = "border: 1px solid black;"&gt;-&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td style = "border: 1px solid black;"&gt;2-person room&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;tfoot&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr style = "text-align: center; border: 1px solid black;"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td style = "border: 1px solid black;" colspan="4"&gt;Rent the entire outer building&lt;/td&gt;<br>
                         &nbsp;&nbsp;&lt;/tr&gt;<br>
-                        &nbsp;&nbsp;&lt;tr&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data 1&lt;/td&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data 2&lt;/td&gt;<br>
-                        &nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &nbsp;&nbsp;&lt;/tfoot&gt;<br>
                         &lt;/table&gt;
                     </blockquote>
                 </code>
                 <h4>Output</h4>
-                <table border="1">
-                    <tr>
-                        <th>Header 1</th>
-                        <th>Header 2</th>
-                    </tr>
-                    <tr>
-                        <td>Data 1</td>
-                        <td>Data 2</td>
-                    </tr>
+                <table style = "border: 1px solid black; border-collapse: collapse;">
+                    <caption><i> Practice</i></caption>
+                    <thead style = "background-color: lightgray;">
+                        <tr>
+                            <th style = "border: 1px solid black;">방 이름</th>
+                            <th style = "border: 1px solid black;">대상</th>
+                            <th style = "border: 1px solid black;">크기</th>
+                            <th style = "border: 1px solid black;">가격</th>
+                        </tr>
+                    </thead>
+                    <tbody style = "background-color: white;">
+                        <tr style = "border: 1px solid black;">
+                            <td style = "border: 1px solid black;">유채방</td>
+                            <td style = "border: 1px solid black;">여성 도미토리</td>
+                            <td style = "border: 1px solid black;" rowspan = "3">4인실</td>
+                            <td style = "border: 1px solid black;" rowspan = "4">1인 20,000원</td>
+                        </tr>
+                        <tr style = "border: 1px solid black;">
+                            <td style = "border: 1px solid black;" rowspan = "2">동백방</td>
+                            <td style = "border: 1px solid black;">동성 도미토리</td>
+                        </tr>
+                        <tr style = "border: 1px solid black;">
+                            <td style = "border: 1px solid black;">가족 1팀</td>
+                        </tr>
+                        <tr style = "border: 1px solid black;">
+                            <td style = "border: 1px solid black;">천혜향방</td>
+                            <td style = "border: 1px solid black;">-</td>
+                            <td style = "border: 1px solid black;">2인실</td>
+                        </tr>
+                    </tbody>
+                    <tfoot style = "background-color: lightgray;">
+                         <tr style = "text-align: center; border: 1px solid black;">
+                            <td style = "border: 1px solid black;" colspan = "4">바깥채 전체를 렌트합니다</td>
+                        </tr>
+                    </tfoot>
                 </table>
             </article>
+            <hr style = "border: 1px dotted black;">
 
             <!-- <thead> 태그 -->
             <article>
@@ -634,6 +693,7 @@
                 When a table is long and not fully visible, JavaScript can be used to fix the table header while only the body portion is scrollable.</p>
                 <h4>Examples are referenced in the &lt;td&gt; tag</h4>
             </article>
+            <hr style = "border: 1px dotted black;">
 
             <!-- <tbody> 태그 -->
             <article>
@@ -642,6 +702,7 @@
                 Generally, it is used within the &lt;table&gt; tag, and contains &lt;tr&gt; tags for the data rows.</p>
                 <h4>Examples are referenced in the &lt;td&gt; tag</h4>
             </article>
+            <hr style = "border: 1px dotted black;">
 
             <!-- <tfoot> 태그 -->
             <article>
@@ -651,8 +712,30 @@
                 Similar to the &lt;thead&gt; tag, it can be fixed while only the body portion is scrollable.</p>
                 <h4>Examples are referenced in the &lt;td&gt; tag</h4>
             </article>
+            <hr style = "border: 1px dotted black;">
 
-            <!-- 여기서부터 계속 -->
+            <!-- <col> 태그-->
+             <article>
+                <h3>8. &lt;col&gt; Tag</h3>
+                <p>&lt;col&gt; tag is used to select columns in the table to specify their width, background color and etc.<br>
+                    &lt;col&gt; and &lt;colgroup&gt; tag must be used right after &lt;caption&gt; tag. 
+                    You can use &lt;col&gt; tag inside &lt;colgroup&gt; tag to select multiple columns. </p>
+             </article>
+             <hr style = "border: 1px dotted black;">
+
+             <!-- <colgroup> 태그-->
+            <article>
+                <h3>9. &lt;colgroup&gt; Tag</h3>
+                <p>Use to group multiple &lt;col&gt; tag. As written in &lt;col&gt; tag, must be located right after &lt;caption&gt; tag.<br>
+                <h4>Attributes</h4>
+                <dl>
+                    <dt><b>- span</b></dt>
+                    <dd>Used to select consecutive columns. For example, if column 1 ~ 3 of table with 4 columns share identical styles, you can just use 2 &lt;col&gt; tags with first one including span = "3" attirbute. <br>
+                    This is more efficient than using 4 &lt;col&gt; tag respectively to edit each of their styles.</dd>
+                    <dt><b>- style</b></dt>
+                    <dd>Used to edit style of an object in a tag. This attribute is also widely used in other tags.</dd>
+                </dl>
+             </article>
         </section>
         <hr style = "border: 1px solid black;">
 
@@ -662,7 +745,112 @@
             <small><i><b>&lt;</b>?<b>&gt;</b>: Tags without closing tags</i></small>
             <hr style = "border: 1px dotted black;">
 
+            <!-- <img> 태그 -->
+            <article>
+                <h3>1. &lt;img&gt; Tag</h3>
+                <p>Used to put image in html file.</p>
+                <h4>Attributes</h4>
+                <dl>
+                    <dt>- <b>src</b></dt>
+                    <dd>File path of the image.</dd>
+                    <dt>- <b>alt</b></dt>
+                    <dd>Alternative text. This text will be displayed if appropriate image can't be loaded.</dd>
+                    <dd>Must be used to qualify Web Accessibility standards.</dd>
+                    <dt>- <b>width</b></dt>
+                    <dd>Use to adjust width of a image. % or px can be used.</dd>
+                    <dt>- <b>height</b></dt>
+                    <dd>Use to adjust height of a image. % or px can be used.</dd>
+                    <dt>- <b>srcset</b></dt>
+                    <dd>Use to set multiple file directories. Usually used together with the sizes attribute.<br>
+                    you can indicate the size of each image in the srcset attribute, for example: "image1.jpg 300w, image2.jpg 600w".</dd>
+                    <dt>- <b>sizes</b></dt>
+                    <dd>Use to specify the physical sizes of the images in the srcset attribute. </dd>
+                </dl>
+                <h4>Advanced Usage</h4>
+                <p>You can use <code>srcset</code> and <code>sizes</code> attributes to provide multiple image sources for different screen sizes or resolutions, improving the performance and user experience of your website.</p>
+                <p>For example, let's see how &lt;img src="image.jpg" srcset="image1.jpg 300w, image2.jpg 600w" sizes="(max-width: 300px) 100vw, 50vw"&gt; works in DPR x2 device.</p>
+                <ul>
+                    <li>CSS pixel indicates the physical size of the image in CSS terms. This means regardless of DPR(explained below), the CSS pixel represents the same physical size on all devices.</li>
+                        <ul>
+                            <li>For example, let's say we have an image with a physical size of 200px (can be determined after printing on paper).</li>
+                            <li>If we want to display it within a 100px CSS area (approx. 2.6cm), a 2x DPR device is the ideal fit for pixel-perfect rendering.</li>
+                        </ul>
+                    <p><strong>Basically, the CSS pixel is the absolute standard unit of measurement in web development.</strong></p>
+                    <li>DPR (Device Pixel Ratio) indicates the ratio of physical pixels(Number of bulbs to light up based on DPR x1 device) to CSS pixels on a device.<br>
+                    In other words, if DPR is 2, it means that each CSS pixel corresponds to 2x2 physical pixels (Light up 4 bulbs per CSS pixel).</li>
+                    <li>Srcset attribute provides two image sources to browser: "image1.jpg" which is 300 pixels wide, and "image2.jpg" which is 600 pixels wide. 
+                        <p><b>The size indicated in srcset attribute is physical pixels (Size determined after printing on paper), not CSS pixels.</b></p>
+                        <ul>
+                            <li>w: Width of the image in physical pixels (e.g., "300w" means the image is 300 pixels wide in physical terms)</li>
+                            <li>x: Pixel density of the image. For example, "1x" means that the image is designed for a DPR x1 device, while "2x" means that the image is designed for a DPR x2 device. (e.g., "image1.jpg 1x", "image2.jpg 2x")</li>
+                            <ul>
+                                <li>"As you can anticipate, 'image1.jpg 2x' should have 4 times the number of pixels as 'image1.jpg 1x' (width * 2, height * 2) to display the image at an identical size on DPR 2x and DPR 1x devices, respectively."</li>
+                            </ul>
+                        </ul>
+                    <p><strong>Size written must be exactly same as the physical size of the image, or else browser will be deceived and may not display the correct image.</strong></p>
+                    <li>The sizes attribute specifies how many pixels the image should occupy based on the viewport(browser) width. If the viewport width is 300 pixels or less, the image should take up 100% of the viewport width (100vw), otherwise it should take up 50% of the viewport width (50vw).<br>
+                    The size here is CSS pixels.</li>
+                    <p><strong>The 'sizes' attribute is only used when images in 'srcset' attribute are provided in w(px) size. In other words, when images are provided in x(density), the 'sizes' attribute is ignored(not used).</strong></p>
+                        <ul>
+                            <li>vw: Viewport width. 1vw is equal to 1% of the viewport width. For example, if the viewport width is 1000 pixels, then 100vw would be 1000 pixels, and 50vw would be 500 pixels.</li>
+                        </ul>
+                </ul>
+                <p>Thus, in a DPR x2 device with a viewport width of 300 pixels or less, the image will take up 100%(300px) of the viewport width (due to '(max-width: 300px) 100vw, 50vw' condition written in the sizes attribute), and second image (image2.jpg) will be used because 300px(CSS size of the image) * 2(DPR, 2 bulbs per pixel) = 600px(bulbs to light up the image).</p>
+                <blockquote>
+                    <i><b>
+                        When an image with [X (physical size of the file)] px needs to be shown in [Y (CSS size)] px on a DPR x [Z] device, [YZ/X] bulbs will be used to light up one pixel of the image. Therefore, the image with [YZ] px in physical pixels suit the best (One bulb per pixel).
+                    </b></i>
+                </blockquote>
+                
+            </article>
+            <hr style = "border: 1px dotted black;">
+
+            <!-- <figure> 태그 -->
+            <article>
+                <h3>2. &lt;figure&gt; Tag</h3>
+                <p>Used to indicate a distinguished content - something like img file.</p>
+                <p>&lt;figcaption&gt; tag is used inside the &lt;figure&gt; tag to describe that content.</p>
+            </article>
+
+            <!-- <figcaption> 태그 -->
+            <article>
+                <h3>3. &lt;figcaption&gt; Tag</h3>
+                <p>Used inside the &lt;figure&gt; tag to describe that content.</p>
+            </article>
+
+            <!-- <object> 태그 -->
+            <article>
+                <h3>4. &lt;object&gt; Tag</h3>
+                <p>Used to embed multimedia content such as videos, audio files, or interactive applications into a web page.</p>
+
+                <h4>Attributes</h4>
+                <ul>
+                    <li><b>width</b></li>
+                    <p>
+                        Specifies the width of the embedded content.
+                    </p>
+                    <li><b>height</b></li>
+                    <p>
+                        Specifies the height of the embedded content.
+                    </p>
+                    <li><b>data</b></li>
+                    <p>Specifies the URL of the resource to embed.</p>
+                </ul>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;object data="my_work_bgm.mp4" width="640" height="360"&gt;<br>
+                        &nbsp;&nbsp;&lt;param name="autoplay" value="true"&gt;<br>
+                        &nbsp;&nbsp;&lt;param name="controls" value="true"&gt;<br>
+                        &nbsp;&nbsp;Your browser does not support the object tag.<br>
+                        &lt;/object&gt;
+                    </blockquote>
+                </code>
+
+            </article>
         </section>
+        <hr style = "border: 1px solid black;">
+
     </main>
 </body>
 </html>
