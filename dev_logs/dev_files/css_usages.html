@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "dev_files.css">
+        <title>CSS Usages</title>
+    </head>
+    <body>
+        <header>
+            <h1>CSS Usages</h1>
+        </header>
+        <main>
+            <!-- Why CSS -->
+            <section>
+                <h2>Why CSS?</h2>
+                <article>
+                    <p>Basically, CSS (Cascading Style Sheets) is used to control the presentation and layout of HTML documents. It allows developers to separate the content of a webpage from its design, making it easier to maintain and update the appearance of multiple pages at once.</p>
+                    <p>CSS is used to define the visual style of HTML elements, such as colors, fonts, spacing, and positioning. It provides a way to create consistent and visually appealing designs across different web pages and devices.</p>
+                    <p>CSS is also used to create responsive designs that adapt to different screen sizes and devices. By using media queries and flexible layouts, developers can ensure that their websites look good and function well on desktops, tablets, and smartphones.</p>
+                </article>
+            </section>
+
+            <!-- CSS Selectors, Attributes, Properties -->
+            <section>
+                <h2>CSS Selectors, Attributes, Properties</h2>
+                <article>
+                    <h3>CSS Selectors</h3>
+                    <p>CSS selectors are used to target specific HTML elements and apply styles to them. There are several types of CSS selectors, including:</p>
+                    <ul>
+                        <li><b>Universal selector:</b> Targets all elements on the page (e.g., *).</li>
+                        <li><b>Element selectors:</b> Target specific HTML elements by their tag name (e.g., p, h1, div).</li>
+                        <li><b>Class selectors:</b> Target elements with a specific class attribute (e.g., .my-class). 
+                            <p>It is necessary to use a period (.) before the class name, and the class name should be unique within the page. 
+                            <br>Also, multiple classes can be applied to a single element by separating them with spaces. 
+                            <br>Elements to select need to have corresponding 'class' attribute.
+                        </p></li>
+                        <li><b>ID selectors:</b> Target elements with a specific ID attribute (e.g., #my-id). 
+                            <p>
+                            It is necessary to use a hash symbol (#) before the ID name, and the ID name should be unique within the page. 
+                            <br>Elements to select need to have corresponding 'id' attribute.
+                            <br>The ID selector has a higher specificity than class selectors, meaning that if an element has both a class and an ID, the styles defined by the ID selector will take precedence over those defined by the class selector.
+                            <br>Also, it's not possible for a element to have multiple IDs, but can have multiple classes.
+                            </p>
+                        </li>
+                        <li><b>Attribute selectors:</b> Target elements based on their attributes (e.g., [type="text"]).</li>
+                        <li><b>Pseudo-class selectors:</b> Target elements based on their state or position (e.g., :hover, :first-child).</li>
+                        <li><b>Pseudo-element selectors:</b> Target specific parts of an element (e.g., ::before, ::after).</li>
+                    </ul>
+                </article>
+                <hr>
+                <article>
+                    <h3>CSS Attributes</h3>
+                    <p>CSS attributes are used to define the styles that will be applied to the selected elements. Some common CSS attributes include:</p>
+                    <ul>
+                        <li><b>color:</b> Sets the text color of an element.</li>
+                        <li><b>background-color:</b> Sets the background color of an element.</li>
+                        <li><b>font-size:</b> Sets the size of the text.</li>
+                        <li><b>font-family:</b> Sets the font type for the text.</li>
+                        <li><b>margin:</b> Sets the space outside an element.</li>
+                        <li><b>padding:</b> Sets the space inside an element, between the content and the border.</li>
+                        <li><b>border:</b> Sets the border style, width, and color of an element.</li>
+                        <li><b>width and height:</b> Set the dimensions of an element.</li>
+                        <li><b>display:</b> Controls how an element is displayed (e.g., block, inline, flex).</li>
+                        <li><b>position:</b> Controls how an element is positioned on the page (e.g., static, relative, absolute, fixed).</li>
+                    </ul>
+                </article>
+                <hr>
+                <article>
+                    <h3>CSS Properties</h3>
+                    <p>CSS properties are the specific values assigned to the attributes to define the appearance of the elements. For example:</p>
+                    <ul>
+                        <li><b>color:</b> red; (sets the text color to red)</li>
+                        <li><b>background-color:</b> #f0f0f0; (sets the background color to a light gray)</li>
+                        <li><b>font-size:</b> 16px; (sets the font size to 16 pixels)</li>
+                        <li><b>margin:</b> 10px; (sets a 10-pixel margin around the element)</li>
+                        <li><b>padding:</b> 5px; (sets a 5-pixel padding inside the element)</li>
+                        <li><b>border:</b> 1px solid black; (sets a 1-pixel solid black border around the element)</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Example CSS Code</h3>
+                    <pre><code>p {
+    color: red;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black;
+}</code></pre>
+                </article>
+            </section>
+
+            <!-- Stylesheet Types -->
+            <section>
+                <h2>Stylesheet Types</h2>
+                <article>
+                    <p>There are three main types of stylesheets in CSS:</p>
+                    <ul>
+                        <li><b>Inline styles:</b> Styles applied directly to an HTML element using the "style" attribute. Example: &lt;p style="color: red;"&gt;This is a red paragraph.&lt;/p&gt;</li>
+                        <li><b>Internal stylesheets:</b> Styles defined within a &lt;style&gt; tag in the &lt;head&gt; section of an HTML document. Example: &lt;style&gt; p { color: red; } &lt;/style&gt;</li>
+                        <li><b>External stylesheets:</b> Styles defined in a separate .css file and linked to the HTML document using the &lt;link&gt; tag. Example: &lt;link rel="stylesheet" href="styles.css"&gt;</li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
