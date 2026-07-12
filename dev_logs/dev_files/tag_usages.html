@@ -112,7 +112,7 @@
         <hr style = "border: 1px solid black;">
 
         <!-- 2. 텍스트 표현 태그 -->
-        <section>
+        <section id = "section2">
             <h2 style = "font-size:medium; color: darkblue">Text Tags [18]</h2>
             <small><i><b>&lt;</b>?<b>&gt;</b>: 닫는 태그가 없는 태그</i></small>
             <hr>
@@ -801,22 +801,23 @@
                         When an image with [X (physical size of the file)] px needs to be shown in [Y (CSS size)] px on a DPR x [Z] device, [YZ/X] bulbs will be used to light up one pixel of the image. Therefore, the image with [YZ] px in physical pixels suit the best (One bulb per pixel).
                     </b></i>
                 </blockquote>
-                
             </article>
             <hr style = "border: 1px dotted black;">
 
             <!-- <figure> 태그 -->
             <article>
                 <h3>2. &lt;figure&gt; Tag</h3>
-                <p>Used to indicate a distinguished content - something like img file.</p>
+                <p>Used to indicate a distinguished content - something like img, object, video etc. file.</p>
                 <p>&lt;figcaption&gt; tag is used inside the &lt;figure&gt; tag to describe that content.</p>
             </article>
+            <hr style = "border: 1px dotted black;">
 
             <!-- <figcaption> 태그 -->
             <article>
                 <h3>3. &lt;figcaption&gt; Tag</h3>
                 <p>Used inside the &lt;figure&gt; tag to describe that content.</p>
             </article>
+            <hr style = "border: 1px dotted black;">
 
             <!-- <object> 태그 -->
             <article>
@@ -839,18 +840,210 @@
                 <h4>Code</h4>
                 <code>
                     <blockquote>
-                        &lt;object data="my_work_bgm.mp4" width="640" height="360"&gt;<br>
-                        &nbsp;&nbsp;&lt;param name="autoplay" value="true"&gt;<br>
-                        &nbsp;&nbsp;&lt;param name="controls" value="true"&gt;<br>
-                        &nbsp;&nbsp;Your browser does not support the object tag.<br>
-                        &lt;/object&gt;
+                        &lt;object data="../../files/분광분석_노트_기말.pdf" width="50%" height="800"&gt;&lt;/object&gt;
                     </blockquote>
                 </code>
-
+                <h4>Output</h4>
+                <object data="../../files/분광분석_노트_기말.pdf" width="50%" height="800"></object>
             </article>
-        </section>
-        <hr style = "border: 1px solid black;">
+            <hr style = "border: 1px dotted black;">
 
+            <!-- <embed> 태그 -->
+            <article>
+                <h3>5. &lt;embed&gt; Tag</h3>
+                <p>Used to embed external content such as PDFs, images, or other media files into a web page.</p>
+                <p>Used for embedding content that is not natively supported by the browser, especially for old browsers.</p>
+                <h4>Attributes</h4>
+                <ul>
+                    <li><b>src</b></li>
+                    <p>
+                        Specifies the URL of the resource to embed.
+                    </p>
+                    <li><b>width</b></li>
+                    <p>
+                        Specifies the width of the embedded content.
+                    </p>
+                    <li><b>height</b></li>
+                    <p>
+                        Specifies the height of the embedded content.
+                    </p>
+                </ul>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;embed src="../../files/workbgm_everyday(ncs).m4a" controls muted width="300px" height="35px"&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <p><i>Omitted, as embed autoplays its content and is quite annoying.</i></p>
+            </article>
+            <hr style = "border: 1px solid black;">
+
+            <!-- <audio> 태그 -->
+            <article>
+                <h3>6. &lt;audio&gt; Tag</h3>
+                <p>Used to embed audio content such as music or sound effects into a web page.</p>
+                <p>It is commonly used for background music, podcasts, or other audio content.</p>
+                <h4>Attributes</h4>
+                <ul>
+                    <li><b>src</b></li>
+                    <p>
+                        Specifies the URL of the audio file to embed.
+                    </p>
+                    <li><b>controls</b></li>
+                    <p>
+                        Specifies that the browser should display audio controls such as play, pause, and volume.
+                    </p>
+                    <li><b>autoplay</b></li>
+                    <p>
+                        Specifies that the audio should start playing automatically when the page loads.
+                    </p>
+                    <li><b>loop</b></li>
+                    <p>
+                        Specifies that the audio should loop continuously.
+                    </p>
+                    <li><b>muted</b></li>
+                    <p>
+                        Specifies that the audio should be initially muted.
+                    </p>
+                    <li><b>preload</b></li>
+                    <p>
+                        Specifies whether the audio should be preloaded when the page loads.
+                    </p>
+                    <li><b>poster</b></li>
+                    <p>Specifies the URL of an image to display while the audio is loading.</p>
+                    <p>Example: poster = "../../files/audio_poster.jpg"</p>
+                </ul>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;audio src="../../files/workbgm_everyday(ncs).m4a" controls muted&gt;&lt;/audio&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <audio src="../../files/workbgm_everyday(ncs).m4a" controls muted></audio>
+            </article>
+            <hr style = "border: 1px solid black;">
+
+            <!-- <video> 태그 -->
+            <article>
+                <h3>7. &lt;video&gt; Tag</h3>
+                <p>Used to embed video content such as movies or animations into a web page.</p>
+                <p>It is commonly used for video tutorials, promotional videos, or other video content.</p>
+                <h4>Attributes</h4>
+                <ul>
+                    <li><b>src</b></li>
+                    <p>
+                        Specifies the URL of the video file to embed.
+                    </p>
+                    <li><b>controls</b></li>
+                    <p>
+                        Specifies that the browser should display video controls such as play, pause, and volume.
+                    </p>
+                    <li><b>autoplay</b></li>
+                    <p>
+                        Specifies that the video should start playing automatically when the page loads.
+                    </p>
+                    <li><b>loop</b></li>
+                    <p>
+                        Specifies that the video should loop continuously.
+                    </p>
+                    <li><b>muted</b></li>
+                    <p>
+                        Specifies that the video should be initially muted.
+                    </p>
+                    <li><b>preload</b></li>
+                    <p>
+                        Specifies whether the video should be preloaded when the page loads.
+                    </p>
+                    <li><b>poster</b></li>
+                    <p>Specifies the URL of an image to display while the video is loading.</p>
+                </ul>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;video src="../../files/sample_video.mp4" controls muted width="640" height="360"&gt;&lt;/video&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <p>Omitted due to storage constraints.</p>
+            </article>
+            <hr style = "border: 1px solid black;">
+
+            <!-- <a> 태그 -->
+            <article>
+                <h3>8. &lt;a&gt; Tag</h3>
+                <p>Used to create hyperlinks to other web pages, files, or resources.</p>
+                <p>It is commonly used for navigation, linking to external websites, or linking to downloadable files.</p>
+                <h4>Attributes</h4>
+                <ul>
+                    <li><b>href</b></li>
+                    <p>
+                        Specifies the URL of the page or resource to link to.
+                    </p>
+                    <li><b>target</b></li>
+                    <p>
+                        Specifies where to open the linked document. Common values are "_blank" (new tab), "_self" (same tab), "_parent", and "_top".
+                    </p>
+                    <li><b>rel</b></li>
+                    <p>
+                        Specifies the relationship between the current document and the linked document. Common values are "noopener", "noreferrer", and "nofollow".
+                    </p>
+                </ul>
+                <h4>Advanced Usage</h4>
+                <ul>
+                    <li>Linked Images</li>
+                    <p>Images can be used as links by wrapping them with an &lt;a&gt; tag.</p>
+                    <p>e.g., &lt;a href="https://www.google.com" target="_blank" rel="noopener"&gt;&lt;img src="../../images/Google_G_logo.png" alt="Google" width="100" height="100"&gt;&lt;/a&gt;</p>
+                    <a href="https://www.google.com" target="_blank" rel="noopener">
+                        <img src="../../images/Google_G_logo.png" alt="Google" width="100" height="100">
+                    </a>
+                    <li>Anchor Links</li>
+                    <p>Links can also point to specific sections within the same page using anchor tags.</p>
+                    <p>Anchored tags should have an id attribute that matches the href value.</p>
+                    <p>e.g., &lt;a href="#section2"&gt;Go to Section 2&lt;/a&gt;</p>
+                    <a href="#section2">Go to Section 2</a>
+                </ul>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;a href="https://www.google.com" target="_blank" rel="noopener"&gt;Visit Google&lt;/a&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <a href="https://www.google.com" target="_blank" rel="noopener">Visit Google</a>
+            </article>
+            <hr style = "border: 1px solid black;">
+        </section>
+
+        <!-- 6. 폼 태그 -->
+         <section>
+            <h2 style = "font-size:medium; color: darkblue">Form Tags []</h2>
+            <small><i><b>&lt;</b>?<b>&gt;</b>: Tags without closing tags</i></small>
+            <hr style = "border: 1px dotted black;">
+            <!-- 
+            <article>
+                <h3>1. &lt;form&gt; Tag</h3>
+                <p>Used to create a form for user input.</p>
+                <p>It is commonly used for login forms, registration forms, search forms, and other types of user input.</p>
+                <h4>Attributes</h4>
+                <ul>
+                    <li><b>action</b></li>
+                    <p>
+                        Specifies the URL where the form data will be sent when the form is submitted.
+                    </p>
+                    <li><b>method</b></li>
+                    <p>
+                        Specifies the HTTP method to use when sending form data. Common values are "GET" and "POST".
+                    </p>
+                    <li><b>enctype</b></li>
+                    <p>
+                        Specifies how the form data should be encoded when submitting it to the server. Common values are "application/x-www-form-urlencoded", "multipart/form-data", and "text/plain".
+                    </p>
+                </ul>
+            -->
+                <b>Omitted, will add later when actually using forms.</b>
+         </section>
     </main>
 </body>
 </html>
