@@ -1021,28 +1021,83 @@
             <h2 style = "font-size:medium; color: darkblue">Form Tags [n]</h2>
             <small><i><b>&lt;</b>?<b>&gt;</b>: Tags without closing tags</i></small>
             <hr style = "border: 1px dotted black;">
-            <!-- 
+            <!-- <select> 태그 -->
             <article>
-                <h3>1. &lt;form&gt; Tag</h3>
-                <p>Used to create a form for user input.</p>
-                <p>It is commonly used for login forms, registration forms, search forms, and other types of user input.</p>
+                <h3>1. &lt;select&gt; Tag</h3>
+                <p>Used to create a drop-down list in a form.</p>
+                <p>It is commonly used for selecting options from a predefined list.</p>
                 <h4>Attributes</h4>
                 <ul>
-                    <li><b>action</b></li>
+                    <li><b>name</b></li>
                     <p>
-                        Specifies the URL where the form data will be sent when the form is submitted.
+                        Specifies the name of the drop-down list, which is used to identify the selected value when the form is submitted.
                     </p>
-                    <li><b>method</b></li>
+                    <li><b>multiple</b></li>
                     <p>
-                        Specifies the HTTP method to use when sending form data. Common values are "GET" and "POST".
-                    </p>
-                    <li><b>enctype</b></li>
-                    <p>
-                        Specifies how the form data should be encoded when submitting it to the server. Common values are "application/x-www-form-urlencoded", "multipart/form-data", and "text/plain".
+                        Specifies that multiple options can be selected from the drop-down list.
                     </p>
                 </ul>
-            -->
-                <b>Omitted, will add later when actually using forms.</b>
+                <h4>Code</h4>
+                <code>
+                    <blockquote>
+                        &lt;form action="/submit" method="post"&gt;<br>
+                        &nbsp;&nbsp;&lt;label for="fruits"&gt;Choose your favorite fruit:&lt;/label&gt;<br>
+                        &nbsp;&nbsp;&lt;select name="fruits" id="fruits"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="apple"&gt;Apple&lt;/option&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="banana"&gt;Banana&lt;/option&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="cherry"&gt;Cherry&lt;/option&gt;<br>
+                        &nbsp;&nbsp;&lt;/select&gt;<br>
+                        &nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt;<br>
+                        &lt;/form&gt;
+                    </blockquote>
+                </code>
+                <h4>Output</h4>
+                <form action="/submit" method="post">
+                    <label for="fruits">Choose your favorite fruit:</label><br><br>
+                    <select name="fruits" id="fruits">
+                        <option value="apple">Apple</option>
+                        <option value="banana">Banana</option>
+                        <option value="cherry">Cherry</option>
+                    </select><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </article>
+            <!-- <option> 태그 -->
+            <article>
+                <h3>2. &lt;option&gt; Tag</h3>
+                <p>Used to define an option in a drop-down list.</p>
+                <h4>Attributes</h4>
+                <ul>
+                    <li><b>value</b></li>
+                    <p>
+                        Specifies the value to be submitted when the form is submitted.
+                    </p>
+                    <li><b>selected</b></li>
+                    <p>
+                        Specifies that the option is selected by default when the page loads.
+                    </p>
+                </ul>
+            </article>
+            <!-- <button> 태그 -->
+            <article>
+                <h3>3. &lt;button&gt; Tag</h3>
+                <p>Used to create a clickable button in a form.</p>
+                <p>It is commonly used for submitting forms, resetting forms, or triggering JavaScript functions.</p>
+                <h4>Attributes</h4>
+                <ul>
+                    <li><b>type</b></li>
+                    <p>
+                        Specifies the type of button. Common values are "submit", "reset", and "button".
+                    </p>
+                    <li><b>name</b></li>
+                    <p>
+                        Specifies the name of the button, which is used to identify the button when the form is submitted.
+                    </p>
+                    <li><b>value</b></li>
+                    <p>
+                        Specifies the value to be submitted when the form is submitted.
+                    </p>
+                </ul>
          </section>
     </main>
 </body>

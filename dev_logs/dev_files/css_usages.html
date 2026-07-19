@@ -3,7 +3,7 @@
     <head>
         <meta charset = "UTF-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" href = "dev_files.css">
+        <link rel = "stylesheet" href = "../../default_.css">
         <title>CSS Usages</title>
     </head>
     <body>
@@ -20,6 +20,7 @@
                     <p>CSS is also used to create responsive designs that adapt to different screen sizes and devices. By using media queries and flexible layouts, developers can ensure that their websites look good and function well on desktops, tablets, and smartphones.</p>
                 </article>
             </section>
+            <hr>
 
             <!-- CSS Selectors, Attributes, Properties -->
             <section>
@@ -30,23 +31,26 @@
                     <ul>
                         <li><b>Universal selector:</b> Targets all elements on the page (e.g., *).</li>
                         <li><b>Element selectors:</b> Target specific HTML elements by their tag name (e.g., p, h1, div).</li>
-                        <li><b>Class selectors:</b> Target elements with a specific class attribute (e.g., .my-class). 
-                            <p>It is necessary to use a period (.) before the class name, and the class name should be unique within the page. 
-                            <br>Also, multiple classes can be applied to a single element by separating them with spaces. 
-                            <br>Elements to select need to have corresponding 'class' attribute.
-                        </p></li>
+                        <li><b>Class selectors:</b> Target elements with a specific class attribute (e.g., .my-class).
+                            <ul>
+                                <li>It is necessary to use a period (.) before the class name, and the class name should be unique within the page.</li>
+                                <li>Also, multiple classes can be applied to a single element by separating them with spaces.</li>
+                                <li>Elements to select need to have corresponding 'class' attribute.</li> 
+                            </ul>
+                        </li>
                         <li><b>ID selectors:</b> Target elements with a specific ID attribute (e.g., #my-id). 
-                            <p>
-                            It is necessary to use a hash symbol (#) before the ID name, and the ID name should be unique within the page. 
-                            <br>Elements to select need to have corresponding 'id' attribute.
-                            <br>The ID selector has a higher specificity than class selectors, meaning that if an element has both a class and an ID, the styles defined by the ID selector will take precedence over those defined by the class selector.
-                            <br>Also, it's not possible for a element to have multiple IDs, but can have multiple classes.
-                            </p>
+                            <ul>
+                                <li>It is necessary to use a hash symbol (#) before the ID name, and the ID name should be unique within the page. </li>
+                                <li>Elements to select need to have corresponding 'id' attribute.</li>
+                                <li>The ID selector has a higher specificity than class selectors, meaning that if an element has both a class and an ID, the styles defined by the ID selector will take precedence over those defined by the class selector.</li>
+                                <li>Also, it's not possible for a element to have multiple IDs, but can have multiple classes.</li>
+                            </ul>
                         </li>
                         <li><b>Attribute selectors:</b> Target elements based on their attributes (e.g., [type="text"]).</li>
                         <li><b>Pseudo-class selectors:</b> Target elements based on their state or position (e.g., :hover, :first-child).</li>
                         <li><b>Pseudo-element selectors:</b> Target specific parts of an element (e.g., ::before, ::after).</li>
                     </ul>
+                    <b>You can use comma to select multiple elements at once.</b>
                 </article>
                 <hr>
                 <article>
@@ -65,7 +69,8 @@
                         <li><b>position:</b> Controls how an element is positioned on the page (e.g., static, relative, absolute, fixed).</li>
                     </ul>
                 </article>
-                <hr>
+
+                <hr style = "border: 1px solid lightgray;">
                 <article>
                     <h3>CSS Properties</h3>
                     <p>CSS properties are the specific values assigned to the attributes to define the appearance of the elements. For example:</p>
@@ -80,7 +85,7 @@
                 </article>
                 <article>
                     <h3>Example CSS Code</h3>
-                    <pre><code>p {
+                    <pre><code>p, .my-class, #my-id {
     color: red;
     background-color: #f0f0f0;
     font-size: 16px;
@@ -103,6 +108,138 @@
                     </ul>
                 </article>
             </section>
+            <hr>
+
+            <!-- CSS Specificity -->
+            <section>
+                <h2>CSS Specificity</h2>
+                <article>
+                    <p>CSS specificity is a set of rules that determine which styles are applied to an element when multiple styles conflict.
+                        There are two types of specifity, one regarding user/author/browser - defined styles (Hierarchy 1), and the other regarding the selectors used in the CSS rules (Hierarchy 2). 
+                        The latter is more important for developers to understand, as it directly affects how their styles are applied to elements on a webpage.</p> 
+                    
+                    <p>Specificity hierarchy 1 is as follows:</p>
+                    <ul>
+                        <li>User-defined styles (e.g., user's custom browser settings, such as high contrast mode.)</li>
+                        <li>Author-defined styles (e.g., styles defined by the website's developer in the CSS files.)</li>
+                        <li>Browser-defined styles (e.g., default styles applied by the browser to HTML elements, such as the default font size and color for paragraphs.)</li>
+                    </ul>
+
+                    <p>The specificity hierarchy 2 is as follows:</p>
+                    <ul>
+                        <li>!important declarations(e.g., p { color: red !important; }) have the highest specificity.</li>
+                        <li>Inline styles (e.g., style="color: red;") have the second highest specificity.</li>
+                        <li>ID selectors (e.g., #my-id) have higher specificity than class selectors, attribute selectors, and pseudo-classes.</li>
+                        <li>Class selectors (e.g., .my-class), attribute selectors (e.g., [type="text"]), and pseudo-classes (e.g., :hover) have higher specificity than element selectors and pseudo-elements.</li>
+                        <li>Element selectors (e.g., p, h1, div) and pseudo-elements (e.g., ::before, ::after) have the lowest specificity.</li>
+                    </ul>
+
+                    <p>When multiple styles are applied to same element, the style with the highest specificity will take precedence. 
+                        If two styles have the same specificity, the one that appears last in the CSS will be applied.</p>
+                </article>
+            </section>
+            <hr>
+            <!-- CSS Font Styles -->
+            <section>
+                <h2>CSS Font Styles</h2>
+                <article>
+                    <p>CSS font styles are used to control the appearance of text on a webpage. Some common CSS font styles include:</p>
+                    <ul>
+                        <li><b>font-family:</b> Specifies the font type for the text (e.g., Arial, Times New Roman, sans-serif).</li>
+                        <ul>
+                            <li><b>Standard Format:</b> font-family: &lt;font name1, font name2, ...&gt;</li>
+                            <li>browser will first try to apply the first font, and if it's not available, it will try the next one.</li>
+                        </ul>
+                        <li><b>font-size:</b> Specifies the size of the text (e.g., absolute: 16px, xx-small, small, medium, large, x-large, xx-large, relative: 1.2em, 120%, 1.5rem).</li>
+                            <ul>
+                                <li><b>Absolute Units(px, xx-small, small, medium, large, x-large, xx-large):</b> These specify the exact size of the text in pixels or predefined sizes.</li>
+                                <li><b>Relative Units(em, rem, %):</b> These specify the size of the text relative to the <em>parent element's</em> font size (em), the root element's font size (rem), or a percentage of the parent element's font size (%).</li>
+                            </ul>
+                        <li><b>font-weight:</b> Specifies the thickness of the text (e.g., normal, bold, 100-900 (400:normal, 700:bold)).</li>
+                        <li><b>font-style:</b> Specifies the style of the text (e.g., normal, italic, oblique(tilts the text. italic has its tilted font already designed.)).</li>
+                    </ul>
+                <h3>CSS Web Fonts</h3>
+                    <p>CSS web fonts allow developers to use custom fonts on their websites, even if the user doesn't have those fonts installed on their device. This is done by linking to a font file hosted on a server or using a font service like <a href="https://fonts.google.com/?preview.script=Latn&preview.layout=grid" target="_blank">Google Fonts</a>.</p>
+                    <p>To use a web font, you can include a link to the font file in your HTML document's &lt;head&gt; section, and then use the font-family property in your CSS to apply the font to specific elements.</p>
+                    <p>Example:</p>
+                    <pre><code>&lt;link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"&gt;</code></pre>
+                <h3>CSS Icon Fonts</h3>
+                    <p>Icon fonts are a way to display icons using web fonts. They allow you to use icons as if they were regular text, making them easy to style and manipulate with CSS.</p>
+                    <p>You can find a variety of icon fonts online, such as <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> and <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a>.</p>
+                </article>
+            </section>
+            <!-- CSS Text Styles -->
+            <section>
+                <h2 id="css-text-styles">CSS Text Styles</h2>
+                <article>
+                    <p>CSS text styles are used to control the appearance of text on a webpage. Some common CSS text styles include:</p>
+                    <ul>
+                        <li><b>color:</b> Specifies the color of the text. (e.g., #000000, red, rgba(255, 0, 0, 0.5))</li>
+                        <ul>
+                            <li>Hexadecimal: #000000</li>
+                            <li>Named colors: red</li>
+                            <li>RGB: rgb(255, 0, 0)</li>
+                            <li>RGBA: rgba(255, 0, 0, 0.5)</li>
+                        </ul>
+                        <li><b>text-align:</b> Specifies the horizontal alignment of the text (e.g., left, right, center, justify, start, end, match-parent).</li>
+                        <ul>
+                            <li>start: aligns the text to the start of the line (left for left-to-right languages, right for right-to-left languages).</li>
+                            <li>end: aligns the text to the end of the line (right for left-to-right languages, left for right-to-left languages).</li>
+                            <li>left: aligns the text to the left side of the element.</li>
+                            <li>right: aligns the text to the right side of the element.</li>
+                            <li>center: centers the text within the element.</li>
+                            <li>justify: aligns the text to both the left and right sides of the element, adding extra space between words as necessary.</li>
+                            <li>match-parent: inherits the text alignment from its parent element.</li>
+                        </ul>
+                        <li><b>text-decoration:</b> Specifies the decoration added to the text (e.g., none, underline, overline, line-through).</li>
+                        <li><b>line-height:</b> Specifies the height(distance) of each line of text (e.g., normal, 1.5, 2em).</li>
+                        <ul>
+                            <li>normal: The default line height, which is typically around 1.2 times the font size.</li>
+                            <li>number: A unitless value that is multiplied by the element's font size to determine the line height (e.g., 1.5 means 1.5 times the font size).</li>
+                            <li>length: A specific length value, such as pixels (px), ems (em), or rems (rem) (e.g., 20px, 1.5em, 2rem).</li>
+                            <li>percentage: A percentage value that is relative to the element's font size (e.g., 150% means 1.5 times the font size).</li>
+                        </ul>
+                        <li><b>text-shadow:</b> Specifies the shadow effect added to the text (e.g., none, 2px(horizontal) 2px(vertical) 5px(blur) rgba(0, 0, 0, 0.5)).</li>
+                        <ul>
+                            <li>none: No shadow effect is applied to the text.</li>
+                            <li>h-shadow: The horizontal offset of the shadow. A positive value moves the shadow to the right, while a negative value moves it to the left.</li>
+                            <li>v-shadow: The vertical offset of the shadow. A positive value moves the shadow down, while a negative value moves it up.</li>
+                            <li>blur: The blur radius of the shadow. A larger value creates a more blurred shadow, while a smaller value creates a sharper shadow.</li>
+                            <li>color: The color of the shadow. This can be specified using named colors, hexadecimal values, RGB, or RGBA.</li>
+                        </ul>
+                        <li><b>letter-spacing:</b> Specifies the space between characters in the text (e.g., normal, 1px, 0.1em).</li>
+                        <li><b>word-spacing:</b> Specifies the space between words in the text (e.g., normal, 1px, 0.1em).</li>
+                        <li><b>text-transform:</b> Specifies the capitalization of the text (e.g., none, capitalize, uppercase, lowercase).</li>
+                        <ul>
+                            <li>none: No transformation is applied to the text.</li>
+                            <li>capitalize: The first letter of each word is converted to uppercase.</li>
+                            <li>uppercase: All letters in the text are converted to uppercase.</li>
+                            <li>lowercase: All letters in the text are converted to lowercase.</li>
+                            <li>full-width: All characters are converted to their full-width equivalents(meaning, each character's height and width become same length).</li>
+                        </ul>
+                        <li><b>text-indent:</b> Specifies the indentation of the first line of text (e.g., 0, 2em, 20px).</li>
+                        <li><b>white-space:</b> Specifies how whitespace is handled in the text (e.g., normal, nowrap, pre, pre-wrap, pre-line).</li>
+                        <li><b>word-wrap:</b> Specifies how long words should be broken and wrapped onto the next line (e.g., normal, break-word).</li>
+                        <li><b>word-break:</b> Specifies how words should break when reaching the end of a line (e.g., normal, break-all, keep-all).</li>
+                        <li><b>text-overflow:</b> Specifies how overflowed text is displayed (e.g., clip, ellipsis, string).</li>
+                        <li><b>direction:</b> Specifies the text direction (e.g., ltr, rtl, inherit). ltr: left-to-right, rtl: right-to-left, inherit: inherits the direction from its parent element.</li>
+                        <li><b>unicode-bidi:</b> Specifies how the text should be displayed when dealing with bidirectional text (e.g., normal, embed, isolate, bidi-override, isolate-override, plaintext).</li>
+                        <li><b>hyphens:</b> Specifies how words should be hyphenated when breaking lines (e.g., none, manual, auto).</li>
+                        <li><b>text-align-last:</b> Specifies the alignment of the last line of text in a block (e.g., auto, left, right, center, justify).</li>
+                        <li><b>text-justify:</b> Specifies the justification method for text (e.g., auto, none, inter-word, inter-character, distribute, kashida).</li>
+                        <li><b>text-emphasis:</b> Specifies the emphasis marks added to the text (e.g., none, circle, dot, sesame, accent).</li>
+                        <li><b>text-emphasis-position:</b> Specifies the position of the emphasis marks relative to the text (e.g., over, under, right, left).</li>
+                        <li><b>text-emphasis-style:</b> Specifies the style of the emphasis marks (e.g., none, circle, dot, sesame, accent).</li>
+                        <li><b>text-emphasis-color:</b> Specifies the color of the emphasis marks (e.g., inherit, currentColor, red, #ff0000).</li>
+                        <li><b>text-orientation:</b> Specifies the orientation of the text in vertical writing modes (e.g., mixed, upright, sideways, sideways-right).</li>
+                        <li><b>text-combine-upright:</b> Specifies how multiple characters should be combined into a single upright character in vertical writing modes (e.g., none, all, digits, letters, full-width).</li>
+                        <li><b>text-rendering:</b> Specifies how the text should be rendered (e.g., auto, optimizeSpeed, optimizeLegibility, geometricPrecision).</li>
+                        <li><b>text-anchor:</b> Specifies the alignment of the text relative to a given point (e.g., start, middle, end).</li>
+                        <li><b>writing-mode:</b> Specifies the direction in which the text is written (e.g., horizontal-tb, vertical-rl, vertical-lr, sideways-rl, sideways-lr).</li>
+                    </ul>
+                </article>
+            </section>
+            <hr>
         </main>
     </body>
 </html>
