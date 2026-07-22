@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Tag Usages</title>
+    <link rel="stylesheet" href="../../default_.css">
 </head>
 <body>
     <header>
@@ -14,7 +15,7 @@
         <!-- 1. 기본 구조 태그 -->
         <section>
             <h2 style = "font-size:medium; color: darkblue">Fundamental Structure Tags [9]</h2>
-            <small><i><b>&lt;</b>?<b>&gt;</b>: Tags without closing tags</i></small>
+            <small>||: elements with no closing tags, &lt;&gt;: elements with closing tags, b: block-level elements, i: inline-level elements</i></small>
             <hr>
 
             <!-- <DOCTYPE! html>태그 -->
@@ -114,7 +115,7 @@
         <!-- 2. 텍스트 표현 태그 -->
         <section id = "section2">
             <h2 style = "font-size:medium; color: darkblue">Text Tags [18]</h2>
-            <small><i><b>&lt;</b>?<b>&gt;</b>: 닫는 태그가 없는 태그</i></small>
+            <small>||: elements with no closing tags, &lt;&gt;: elements with closing tags, b: block-level elements, i: inline-level elements</i></small>
             <hr>
             <!-- <h1>~<h6>태그 -->
             <article>
@@ -424,10 +425,10 @@
         <!-- 3. 목록 태그 -->
         <section>
             <h2 style = "font-size:medium; color: darkblue">List Tags [6개]</h2>
-            <small><i><b>&lt;</b>?<b>&gt;</b>: Tags without closing tags</i></small><br>
-            <img src="../../images/dev-html-ordered_structure.jpg" alt="List with ordered structure", width="500"><br>
-            <img src="../../images/dev-html-unordered_structure.jpg" alt="List with unordered structure", width="500"><br>
-            <img src="../../images/dev-html-description_list_structure.jpg" alt="List with description structure", width="500">
+            <small>||: elements with no closing tags, &lt;&gt;: elements with closing tags, b: block-level elements, i: inline-level elements</i></small>
+            <div><img src="../../images/dev-html-ordered_structure.jpg" alt="List with ordered structure", width="500"></div>
+            <div><img src="../../images/dev-html-unordered_structure.jpg" alt="List with unordered structure", width="500"></div>
+            <div><img src="../../images/dev-html-description_list_structure.jpg" alt="List with description structure", width="500"></div>
 
             <p>First, as shown in the images above, declare the list and then insert the data inside it.<br>
             For more details, refer to the examples below.</p>
@@ -436,7 +437,7 @@
             <!-- <li> 태그 -->
             <article>
                 <h3>1. &lt;li&gt; Tag</h3>
-                <p>&lt;li&gt; Tag is used to indicate an item in a list.<br>
+                <p>&lt;li&gt; Tag is used to indicate an item in a list.
                 It is commonly used with &lt;ul&gt; or &lt;ol&gt; tags.</p>
                 <h4>Code</h4>
                 <code>
@@ -502,25 +503,25 @@
             <!-- <dl> 태그 -->
             <article>
                 <h3>4. &lt;dl&gt; Tag</h3>
-                <p>&lt;dl&gt; Tag is used to indicate a definition list.<br>
-                    A definition list is a list of terms and their corresponding descriptions.<br>
-                    It is commonly used with &lt;dt&gt; (definition term) and &lt;dd&gt; (definition description) tags.</p>
+                <p>&lt;dl&gt; Tag is used to indicate a definition list.</p>
+                <p>A definition list is a list of terms and their corresponding descriptions.</p>
+                <p>It is commonly used with &lt;dt&gt; (definition term) and &lt;dd&gt; (definition description) tags.</p>
                 <h4>Examples are referenced in the &lt;dd&gt; tag</h4>
             </article>
 
             <!-- <dt> 태그 -->
             <article>
                 <h3>5. &lt;dt&gt; Tag</h3>
-                <p>&lt;dt&gt; Tag is used to indicate a definition term in a definition list.<br>
-                It is commonly used with &lt;dl&gt; and &lt;dd&gt; tags.</p>
+                <p>&lt;dt&gt; Tag is used to indicate a definition term in a definition list.</p>
+                <p>It is commonly used with &lt;dl&gt; and &lt;dd&gt; tags.</p>
                 <h4>Examples are referenced in the &lt;dd&gt; tag</h4>
             </article>
 
             <!-- <dd> 태그 -->
             <article>
                 <h3>6. &lt;dd&gt; Tag</h3>
-                <p>&lt;dd&gt; Tag is used to indicate a definition description in a definition list.<br>
-                It is commonly used with &lt;dl&gt; and &lt;dt&gt; tags.</p>
+                <p>&lt;dd&gt; Tag is used to indicate a definition description in a definition list.</p>
+                <p>It is commonly used with &lt;dl&gt; and &lt;dt&gt; tags.</p>
                 <h4>Code</h4>
                 <code>
                     <blockquote>
@@ -546,30 +547,34 @@
         <!-- 4. 표 태그 -->
         <section>
             <h2 style = "font-size:medium; color: darkblue">Table Tag [6]</h2>
-            <small><i><b>&lt;</b>?<b>&gt;</b>: Tags without closing tags</i></small>
+            <small>||: elements with no closing tags, &lt;&gt;: elements with closing tags, b: block-level elements, i: inline-level elements</i></small>
             <p>Table is divided into the following parts: table caption, column names, body, and summary.</p>
             <img src = "../../images/dev-html-table_structure.jpg" alt = "표 구조" width="600px">
-            <p>
-                To create a table like the one in the image above, use the &lt;table&gt; tag. This is the process of declaring a table.<br>
-                To add a title to the table, use the &lt;caption&gt; tag.<br>
-                Generally, in Excel, data is entered based on rows and columns, but in HTML, data is entered based on rows, and the columns are automatically adjusted.
-                For example, 2 x 3 table where you want the bottom-right cell to be empty, you would not include data in the third cell of the second row.<br>
-                Rows are created with the &lt;tr&gt; tag.<br>
-                Data is created with the &lt;td&gt; tag.<br>
-                Detailed explanations are provided below.
-            </p>
+            <ul>
+                <li>To create a table like the one in the image above, use the &lt;table&gt; tag. </li>
+                <li>This is the process of declaring a table.</li>
+                <li>To add a title to the table, use the &lt;caption&gt; tag.</li>
+                <li>Generally, in Excel, data is entered based on rows and columns, but in HTML, data is entered based on rows, and the columns are automatically adjusted.</li>
+                <li>For example, 2 x 3 table where you want the bottom-right cell to be empty, you would not include data in the third cell of the second row.</li>
+                <li>Rows are created with the &lt;tr&gt; tag.</li>
+                <li>Data is created with the &lt;td&gt; tag.</li>
+                <li>Detailed explanations are provided below.</li>
+                </p>
+            </ul>
             <hr style = "border: 1px dotted black;">
 
             <!-- <table> 태그 -->
             <article>
                 <h3>1. &lt;table&gt; Tag</h3>
-                <p>&lt;table&gt; Tag is used to indicate a table.<br>
-                Generally, it is used with the following tags:<br>
-                &lt;caption&gt; (table caption(title)) <br>
-                &lt;tr&gt; (table row)<br> 
-                &lt;th&gt; (table header)<br>
-                &lt;td&gt; (table data)<br>
-                These tags are used together.</p>
+                <p>&lt;table&gt; Tag is used to indicate a table.
+                Generally, it is used with the following tags:</p>
+                <ul>
+                <li>&lt;caption&gt; (table caption(title))</li>
+                <li>&lt;tr&gt; (table row)</li>
+                <li>&lt;th&gt; (table header)</li>
+                <li>&lt;td&gt; (table data)</li>
+                </ul>
+                <p>These tags are used together.</p>
                 <h4>Examples are referenced in the &lt;td&gt; tag</h4>
             </article>
             <hr style = "border: 1px dotted black;">
@@ -742,7 +747,7 @@
         <!-- 5. 파일 태그 -->
         <section>
             <h2 style = "font-size:medium; color: darkblue">File Tags [8]</h2>
-            <small><i><b>&lt;</b>?<b>&gt;</b>: Tags without closing tags</i></small>
+            <small>||: elements with no closing tags, &lt;&gt;: elements with closing tags, b: block-level elements, i: inline-level elements</i></small>
             <hr style = "border: 1px dotted black;">
 
             <!-- <img> 태그 -->
@@ -1019,7 +1024,7 @@
         <!-- 6. 폼 태그 -->
          <section>
             <h2 style = "font-size:medium; color: darkblue">Form Tags [n]</h2>
-            <small><i><b>&lt;</b>?<b>&gt;</b>: Tags without closing tags</i></small>
+            <small>||: elements with no closing tags, &lt;&gt;: elements with closing tags, b: block-level elements, i: inline-level elements</i></small>
             <hr style = "border: 1px dotted black;">
             <!-- <select> 태그 -->
             <article>
@@ -1062,6 +1067,7 @@
                     <input type="submit" value="Submit">
                 </form>
             </article>
+
             <!-- <option> 태그 -->
             <article>
                 <h3>2. &lt;option&gt; Tag</h3>
@@ -1078,6 +1084,7 @@
                     </p>
                 </ul>
             </article>
+
             <!-- <button> 태그 -->
             <article>
                 <h3>3. &lt;button&gt; Tag</h3>
