@@ -6,7 +6,7 @@ body {
     line-height: 1.6;
 }
 p {
-    text-indent: 1.5em;
+    width:40%;
 }
 h1{
     color:black;
